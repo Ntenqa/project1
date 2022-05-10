@@ -62,3 +62,10 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: absolute;
 }
+.text{
+   align-items: flex-end;
+}
+#About{
+    background-color: black;
+    color: white;
+}
