@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.my-container {
+    background-image: url(ocean.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.navbar{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    margin-left: -300px;
+    background-color: black;
+    transition: 0.4s;
+}
+.nav-link{
+    font-size: 20px;
+}
+.nav-link:active,.nav-link:focus,.nav-link:hover{
+  background-color: darkcyan;
+}
+.my-container{
+    transition: 0.4s;
+}
+.active-nav{
+    margin-left: 0;
+}
+.active-cont{
+    margin-left: 250px;
+}
+#menu-btn{
+    background-color: black;
+    color: whitesmoke;
+}
+.carousel-item{
+    height:24rem;
+}
+.social{
+    color: dodgerblue;
+    transition: color 0.3s;
+    text-decoration: none;
+    text-align: left;
+    position: absolute;
+    transform: translateY(50%);
+    bottom: 70px;
+
+    
+}
+.social:hover{
+    color: aqua;
+
+}
+.display-h1{
+    text-align: left;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: absolute;
+}
