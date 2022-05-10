@@ -6,9 +6,9 @@
 
 
 .my-container {
-    background-image: url(ocean.jpg);
+    background-image: url(bac.webp);
     background-repeat: no-repeat;
-   background-size: cover;
+    background-size: cover;
 }
 
 .navbar{
@@ -16,7 +16,7 @@
     height: 100vh;
     position: fixed;
     margin-left: -300px;
-    background-color: black;
+    background-color:black;
     transition: 0.4s;
 }
 .nav-link{
@@ -35,8 +35,27 @@
     margin-left: 250px;
 }
 #menu-btn{
-    background-color: black;
+    background-color: blueviolet;
     color: whitesmoke;
+}
+.display-h1{
+   font-size: 7rem;
+}
+.paragraph{
+    text-align: center;
+    font-size:4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+}
+.my-container h2 span{
+    color: darkblue;
+}
+.text{
+    text-align: right;
+    margin-top:100px ;
+    font-size: large;
+    margin-right:100px ;
+
 }
 .carousel-item{
     height:24rem;
@@ -49,23 +68,77 @@
     position: absolute;
     transform: translateY(50%);
     bottom: 70px;
-
-    
 }
 .social:hover{
     color: aqua;
 
 }
 .display-h1{
-    text-align: left;
+    text-align: center;
     color:white;
     font-family: 'Times New Roman', Times, serif;
     font-weight: absolute;
 }
-.text{
-   align-items: flex-end;
+.display-h2{
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+   font-size: 3rem;
+}
+.picture{
+   float: right;
+   margin-top:70px;
+   margin-right:100px ;
 }
 #About{
     background-color: black;
     color: white;
+}
+#education{
+    background-image:url(gal.avif);
+    color:white ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 7em;
+    text-align: center;
+}
+.card{
+    display: grid;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas:
+    "image"
+    "text"
+    "stats";
+    border-radius: 18px;
+    background: black;
+    box-shadow: 5px 5px 15px rgb(0 0 0/90%);
+    width: 19vw;
+    height:25vw ;
+    transition: 0.5s ease;
+    margin-top: 18px;
+    margin-left: 230px;
+}
+@media all and (max-width:768px) {
+    .display-h1{
+        font-size: 5rem;
+     }   
+    
+}
+@media all and (max-width:567px) {
+    .display-h1{
+        font-size: 3rem;
+     }   
+    
+}
+@media all and (max-width:400px) {
+    .display-h1{
+        font-size: 2rem;
+     }   
+    
 }

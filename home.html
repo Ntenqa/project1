@@ -22,11 +22,20 @@
                 <a href="#About" class="nav-link text-light pl-4">About</a>
             </li>
             <li class="nav-item w-100">
-                <a href="#" class="nav-link text-light pl-4">Resume</a>
+                <a href="#education" class="nav-link text-light pl-4">education</a>
             </li>
             <li class="nav-item w-100">
                 <a href="#" class="nav-link text-light pl-4">Contact</a>
             </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light pl-4">Projects</a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light pl-4">Skills</a>
+            </li>
+        
+        
+        
         </ul>
             <div class="social">
                 <a href="https://www.instagram.com/khanyie_ntenqa/"  target="_blank"><ion-icon name="logo-instagram" ></ion-icon></a>
@@ -37,14 +46,16 @@
     <section class="p-4 my-container vh-100">
         <button class="btn my-4" id="menu-btn">Menu</button>
         <h1 class="display-h1">Khanyiswa Ntenqa</h1>
-        <p>An aspiring <span class="typed">Website Developer</span></p>
+        <h2 class="paragraph">An aspiring <span class="typed">Website Developer</span></h2>
+
+
     </section>
-    <section class="vh-100" id="About">
+    <section class=" vh-100" id="About">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <br>
-                    <img src="Khanyiswa3.png" alt="nten" width="100%"height="100%"class="rounded">
+                    <img src="Khanyiswa3.png" alt="nten" width="100%"height="90%"class="rounded">
                 </div>
                 <div class="col-md-8">
                     <br>
@@ -62,7 +73,26 @@
                     <p><span class="float-left">Hobbies: </span><span class="float-right"><i>Researching and music</i></span></p><br />
                 </div>
             </div>
-       
+        </section>
+        <section class="md vh-100" id="education">
+                <h2 class="display-h2">Education</h2>
+    
+                <div class="text">
+                    <p>“Education is not the learning of facts but the training of the mind to think.”</p>
+                    <p>~Albert Eistein</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    <div class="card-text">
+                        <span class="date"></span>
+                        <h1>New Eisleben high school</h1>
+                        <h2>2015-2018</h2>
+                    </div>
+                </div>
+                
+        </section>
+        
+        
        
 
 
@@ -87,9 +117,12 @@
         var menu_btn = document.querySelector("#menu-btn")
         var sidebar = document.querySelector("#sidebar")
         var container = document.querySelector(".my-container")
+        var About=document.querySelector("#About")
         menu_btn.addEventListener("click",()=>{
             sidebar.classList.toggle("active-nav")
             container.classList.toggle("active-cont")
+            About.classList.toggle("active-cont")
+            
         })
     </script>
 
